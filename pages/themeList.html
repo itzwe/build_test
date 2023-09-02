@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+      type="image/xml+svg"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
+    <script
+      type="text/javascript"
+      src="//dapi.kakao.com/v2/maps/sdk.js?appkey=8fce582c3fd7fb4ee3397cc0cea10c10&libraries=services,clusterer,drawing"
+    ></script>
+    <script src="../js/themeList.js" type="module" defer></script>
+    <title>Lion Place</title>
+  </head>
+
+  <body class="mx-auto max-w-xs font-pretendard leading-relaxed">
+    <div class="flex flex-col h-screen pb-[70px]">
+      <div class="imageContainer flex-col items-center justify-center pt-3 text-center grow">
+        <header class="themePosition flex h-12 max-w-xs items-center justify-between bg-transparent px-2 py-2">
+          <h1 class="sr-only">테마 목록</h1>
+          <button onclick="window.history.back()"><img src="../assets/icon/icon-left.svg" alt="뒤로가기" /></button>
+        </header>
+
+      <div class="-mt-5 flex-col justify-center items-center rounded-t-xl bg-white text-center pb-[70px]">
+        <div class="px-2 py-4 flex text-xs justify-between items-center gap-8">
+          <div class="flex items-center">
+            <div class="w-[50px] h-[50px] rounded-full border-solid border-2 border-lightGreen500">
+              <img src="../assets/images/etc/단지공주.jpg" alt="프로필" class="w-full h-full rounded-full object-cover" />
+            </div>
+            <div class="flex flex-col gap-1 ml-2">
+              <p class="font-semibold text-left">COOLION</p>
+              <ul class="flex flex-row gap-1 text-lightGray600 font-semibold text-left">
+                <li class="shrink-0">리뷰 17</li><span>•</span>
+                <li class="shrink-0">사진 19</li><span>•</span>
+                <li class="shrink-0">팔로워 2</li><span>•</span>
+                <li class="shrink-0">테마 0</li>
+              </ul>
+            </div>
+          </div>
+          <button>
+            <img src="./../assets/icon/icon-right.svg" alt="더보기" />
+          </button>
+        </div>
+
+        <div class="max-w-xs px-4 py-4 bg-lightGray700">
+          <button class="my-3 inline-flex h-11 w-full cursor-pointer justify-center items-center rounded-3xl bg-lightGreen500 text-white hover:bg-lightGreen300">
+            <img class="h-5 w-6" src="../assets/icon/icon-pencil-white.svg" alt="수정하기" />
+            <span class="text-xs">수정하기</span>
+          </button>
+
+          <div class="reviewContainer">
+
+          </div>
+
+          <div class="relative">
+            <div class="themeMap w-full h-40 mt-8">
+            </div>
+            <button class="plusButton absolute right-0 top-2 z-40">
+              <img src="../assets/icon/icon-rtlbArrow.svg" alt="확대" />
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <nav class="fixed bottom-0 w-full max-w-xs h-[70px] bg-white p-2 text-xs z-50">
+        <ul class="flex items-center justify-around">
+          <li>
+            <a class="flex flex-col items-center justify-center" href=""
+              ><img src="../assets/icon/icon-map.svg" alt="지도" />지도</a>
+          </li>
+          <li>
+            <a class="flex flex-col items-center justify-center" href=""
+              ><img src="../assets/icon/icon-save.svg" alt="저장" />저장</a>
+          </li>
+          <li class="flex flex-col items-center">
+            <a class="flex flex-col items-center justify-center" href=""
+              ><img src="../assets/icon/icon-transport.svg" alt="대중교통" />대중교통</a>
+          </li>
+          <li class="flex flex-col items-center">
+            <a class="flex flex-col items-center justify-center" href=""
+              ><img src="../assets/icon/icon-car.svg" alt="내비게이션" />내비게이션</a>
+          </li>
+          <li>
+            <a class="flex flex-col items-center justify-center" href=""
+              ><img src="../assets/icon/icon-my.svg" alt="마이페이지" />MY</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </body>
+</html>

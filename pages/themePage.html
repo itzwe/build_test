@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="ko-kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lion Place</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <script src="../js/themePage.js" type="module"></script>
+  </head>
+  <body class="mx-auto h-screen max-w-xs font-pretendard leading-relaxed">
+    <header class="relative w-80 bg-lionPrimary px-[22px] pb-4 pt-9">
+      <h1 class="hidden">사용자 프로필</h1>
+      <button type="button" class="absolute right-7 top-4 rounded border px-1 text-xs text-white">쿠폰</button>
+      <span class="absolute right-5 top-2 rounded-full bg-white px-[5px] py-0 text-xs">1</span>
+      <div class="flex pb-3 pl-1 text-white">
+        <button class="relative mr-[19px] h-[56px] w-[56px] rounded-full border-2 border-white">
+          <img src="../assets/images/etc/단지공주.jpg" alt="" class="h-[52px] w-[56px] rounded-full" />
+
+          <img src="../assets/icon/icon-pencilRound.svg" alt="프로필수정" class="absolute bottom-[-3px] right-[-3px]" />
+        </button>
+
+        <div>
+          <div>
+            <span class="flex items-center pb-1 text-sm font-semibold text-white">
+              단지공주
+              <button>
+                <img class="mb-[4px] pl-1" src="../assets/icon/icon-share.svg" alt="공유하기" />
+              </button>
+              <button class="btnLogout ml-3 rounded-md border bg-lightGreen700 px-1 text-center text-[10px] text-lightGray500">Logout</button>
+            </span>
+          </div>
+          <ul class="flex gap-3 text-xs font-normal">
+            <li class="flex flex-col text-center">
+              <span>리뷰</span>
+              <span>17</span>
+            </li>
+            <li class="flex flex-col border-x px-3 text-center">
+              <span>사진</span>
+              <span>19</span>
+            </li>
+            <li class="flex flex-col border-r pr-2 text-center">
+              <span>팔로잉</span>
+              <span>0</span>
+            </li>
+            <li class="flex flex-col text-center">
+              <span>팔로워</span>
+              <span>2</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="flex flex-row justify-between gap-2 p-1 text-xs font-semibold leading-4 text-white">
+        <button class="justify-center-center inline-flex w-4/6 items-center rounded-lg bg-lightGreen500 px-14 py-1 hover:bg-lionSecondary">
+          <img src="../assets/icon/icon-pencil.svg" alt="연필" class="mr-[5px] w-5" />
+          글쓰기
+        </button>
+        <button class="justify-center-center inline-flex w-2/6 items-center rounded-lg bg-lightGreen500 px-4 py-1 hover:bg-lionSecondary">
+          <img src="../assets/icon/icon-mission.svg" alt="미션" class="mr-[5px] w-5" />
+          <span>미션</span>
+        </button>
+      </div>
+    </header>
+    <nav class="bg-lionPrimary">
+      <ul class="flex justify-around text-center font-semibold text-lionTertiary">
+        <li class="w-[68px]">
+          <a href="./feedPage.html">피드</a>
+        </li>
+        <li class="w-[68px]">
+          <a href="./visitRecord.html" class="">방문</a>
+        </li>
+        <li class="w-[68px] border-b-2 border-lionSecondary text-lionSecondary"><a href="">리뷰</a></li>
+        <li class="w-[68px]"><a href="" class="whitespace-nowrap">예약&middot;주문</a></li>
+      </ul>
+    </nav>
+
+    <div class="flex flex-col bg-lightGray700 px-4 pb-[37px]">
+      <div class="py-3 font-semibold">테마 <span class="text-gray-400">1</span></div>
+      <div class="flex justify-between gap-3">
+        <div
+          class="flex h-[184px] w-[148px] flex-col justify-end rounded-xl bg-custom-gradient pb-7 pl-[9px] transition duration-300 ease-in-out hover:scale-110"
+        >
+          <a href="./themePlusItem.html">
+            <div>
+              <p class="text-sm font-semibold">연남/합정 데이트</p>
+              <div class="flex gap-[3px] text-xs">
+                <p>장소 2</p>
+                <p class="flex gap-1"><img src="../assets/icon/icon-eye.svg" alt="" />7</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div
+          class="flex h-[184px] w-[148px] flex-col items-center justify-center rounded-xl bg-white text-center transition duration-300 ease-in-out hover:scale-110"
+        >
+          <button>
+            <a href="./themePlus.html"><img src="../assets/icon/icon-plus.svg" alt="더보기" class="h-[46px] w-[46px]" /></a>
+          </button>
+          <div class="pt-[14px] text-xs text-gray-400">
+            <p>내 리뷰만 모아</p>
+            <p>테마만들기</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="flex justify-between px-4 py-3">
+        <div class="flex gap-2">
+          <button type="button" class="flex gap-2">
+            <img src="../assets/icon/icon-grayHamburger.svg" alt="모아보기" class="h-[18px] w-[18px]" />
+            <a href="./reviewChoicePage.html"><p class="text-xs text-gray-400">전체</p></a>
+          </button>
+          <button class="flex gap-2">
+            <img src="../assets/icon/icon-blackPhoto.svg" alt="사진" class="h-[18px] w-[18px]" />
+            <p class="text-xs font-semibold">사진</p>
+          </button>
+        </div>
+        <button class="flex gap-2">
+          <p class="text-xs text-gray-500">최신순</p>
+          <img src="../assets/icon/icon-up.svg" alt="" />
+        </button>
+      </div>
+      <ul class="square-list grid grid-cols-2 gap-2 px-[17px] py-[7px]"></ul>
+    </div>
+    <nav class="sticky bottom-0 left-0 right-0 h-[70px] bg-white p-2 text-xs">
+      <ul class="flex items-center justify-around">
+        <li>
+          <a class="flex flex-col items-center justify-center" href=""><img src="../assets/icon/icon-map.svg" alt="지도" />지도</a>
+        </li>
+        <li>
+          <a class="flex flex-col items-center justify-center" href=""><img src="../assets/icon/icon-save.svg" alt="저장" />저장</a>
+        </li>
+        <li class="flex flex-col items-center">
+          <a class="flex flex-col items-center justify-center" href=""><img src="../assets/icon/icon-transport.svg" alt="대중교통" />대중교통</a>
+        </li>
+        <li class="flex flex-col items-center">
+          <a class="flex flex-col items-center justify-center" href=""><img src="../assets/icon/icon-car.svg" alt="내비게이션" />내비게이션</a>
+        </li>
+        <li>
+          <a class="flex flex-col items-center justify-center" href=""><img src="../assets/icon/icon-my.svg" alt="마이페이지" />MY</a>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>
